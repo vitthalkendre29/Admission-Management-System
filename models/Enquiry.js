@@ -25,6 +25,7 @@ const EnquirySchema = new mongoose.Schema({
   campus: { type: String, required: true },
   admissionType: { type: String, enum: ['Government', 'Institute Level'], required: true },
   panCardNo: { type: String },
+  adharCardNo: { type: String,required: true },
   createdAt: { type: Date, default: Date.now }
 });
 
